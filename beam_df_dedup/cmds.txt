@@ -1,0 +1,9 @@
+# this is the cmds for DirectRunner (localtest) or use DataFlowRunner (Make use of dataflow service)
+
+
+compile exec:java -Dexec.mainClass=com.google.examples.dfdedup.HourlyAnalyze
+"-Dexec.args=--project=project_name --BQDataset=prac1 --pubSubSubscriptionForDedup=dedup_v2  --targetParallelism=1  --runner=DirectRunner"
+
+
+compile exec:java -Dexec.mainClass=com.google.examples.dfdedup.HourlyAnalyze
+"-Dexec.args=--project=project_name --pubSubSubscriptionForDedup=dedup_v1  --runner=DataflowRunner --region=asia-east1 --tempLocation=gs://project_name/temp1 --BQDataset=prac1" -Pdataflow-runner
