@@ -47,7 +47,7 @@
     <hadoop.version>2.7.3</hadoop.version>
     <maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
     <nemo.version>0.1</nemo.version>
-    <postgresql.version>42.2.14</postgresql.version>
+    <postgresql.version>42.4.1</postgresql.version>
   </properties>
 
   <repositories>
